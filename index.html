@@ -12,6 +12,67 @@
       tailwind.config = {
         darkMode: "class",
         theme: {
+          spacing: {
+            0: "0",
+            0.5: "0.128rem",
+            1: "0.256rem",
+            1.5: "0.384rem",
+            2: "0.512rem",
+            2.5: "0.64rem",
+            3: "0.768rem",
+            3.5: "0.896rem",
+            4: "1.024rem",
+            5: "1.28rem",
+            6: "1.536rem",
+            7: "1.792rem",
+            8: "2.048rem",
+            9: "2.304rem",
+            10: "2.56rem",
+            12: "3.072rem",
+            14: "3.584rem",
+            16: "4.096rem",
+            20: "5.12rem",
+            24: "6.144rem",
+            28: "7.168rem",
+            32: "8.192rem",
+            36: "9.216rem",
+            40: "10.24rem",
+            44: "11.264rem",
+            48: "12.288rem",
+            52: "13.312rem",
+            56: "14.336rem",
+            60: "15.36rem",
+            64: "16.384rem",
+            72: "18.432rem",
+            80: "20.48rem",
+            96: "24.576rem",
+          },
+          fontSize: {
+            xs: ["0.64rem", { lineHeight: "0.96rem" }],
+            sm: ["0.768rem", { lineHeight: "1.152rem" }],
+            base: ["0.8rem", { lineHeight: "1.28rem" }],
+            lg: ["0.896rem", { lineHeight: "1.344rem" }],
+            xl: ["1.024rem", { lineHeight: "1.536rem" }],
+            "2xl": ["1.28rem", { lineHeight: "1.92rem" }],
+            "3xl": ["1.536rem", { lineHeight: "2.304rem" }],
+            "4xl": ["2.048rem", { lineHeight: "2.56rem" }],
+            "5xl": ["2.56rem", { lineHeight: "1" }],
+            "6xl": ["3.072rem", { lineHeight: "1" }],
+            "7xl": ["3.584rem", { lineHeight: "1" }],
+            "8xl": ["4.096rem", { lineHeight: "1" }],
+            "9xl": ["5.12rem", { lineHeight: "1" }],
+          },
+          borderRadius: {
+            none: "0px",
+            sm: "0.128rem",
+            base: "0.256rem",
+            md: "0.384rem",
+            lg: "0.512rem",
+            xl: "0.768rem",
+            "2xl": "1.024rem",
+            "3xl": "1.28rem",
+            full: "9999px",
+          },
           extend: {
             colors: {
               "primary": "#0df259",
@@ -42,17 +103,7 @@
         display: none;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
-  }
-}
-</script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
-  </body>
-</html>
+    <script type="module" src="/index.tsx"></script>
